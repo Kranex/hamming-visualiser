@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/hamming-visualiser/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/hamming-visualiser/static/js/main.c0c000d6.chunk.js",
-    "main.js.map": "/hamming-visualiser/static/js/main.c0c000d6.chunk.js.map",
-    "runtime-main.js": "/hamming-visualiser/static/js/runtime-main.33998ca6.js",
-    "runtime-main.js.map": "/hamming-visualiser/static/js/runtime-main.33998ca6.js.map",
-    "static/js/2.16c62bb9.chunk.js": "/hamming-visualiser/static/js/2.16c62bb9.chunk.js",
-    "static/js/2.16c62bb9.chunk.js.map": "/hamming-visualiser/static/js/2.16c62bb9.chunk.js.map",
-    "static/js/3.f208d85b.chunk.js": "/hamming-visualiser/static/js/3.f208d85b.chunk.js",
-    "static/js/3.f208d85b.chunk.js.map": "/hamming-visualiser/static/js/3.f208d85b.chunk.js.map",
+    "main.js": "/hamming-visualiser/static/js/main.69613d2e.chunk.js",
+    "main.js.map": "/hamming-visualiser/static/js/main.69613d2e.chunk.js.map",
+    "runtime-main.js": "/hamming-visualiser/static/js/runtime-main.c23c8e02.js",
+    "runtime-main.js.map": "/hamming-visualiser/static/js/runtime-main.c23c8e02.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/hamming-visualiser/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.bf0b0387.chunk.js": "/hamming-visualiser/static/js/2.bf0b0387.chunk.js",
+    "static/js/2.bf0b0387.chunk.js.map": "/hamming-visualiser/static/js/2.bf0b0387.chunk.js.map",
+    "static/js/3.943bf6c8.chunk.js": "/hamming-visualiser/static/js/3.943bf6c8.chunk.js",
+    "static/js/3.943bf6c8.chunk.js.map": "/hamming-visualiser/static/js/3.943bf6c8.chunk.js.map",
     "index.html": "/hamming-visualiser/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/hamming-visualiser/static/css/2.1a02f21c.chunk.css.map",
     "static/css/main.8c8b27cf.chunk.css.map": "/hamming-visualiser/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.16c62bb9.chunk.js.LICENSE.txt": "/hamming-visualiser/static/js/2.16c62bb9.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/hamming-visualiser/static/media/logo.6ce24c58.svg"
+    "static/js/2.bf0b0387.chunk.js.LICENSE.txt": "/hamming-visualiser/static/js/2.bf0b0387.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.33998ca6.js",
-    "static/js/2.16c62bb9.chunk.js",
+    "static/js/runtime-main.c23c8e02.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.bf0b0387.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.c0c000d6.chunk.js"
+    "static/js/main.69613d2e.chunk.js"
   ]
 }
