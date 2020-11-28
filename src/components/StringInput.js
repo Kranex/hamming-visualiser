@@ -25,7 +25,7 @@ class StringInput extends Component {
   }
 
   onPaste(event) {
-    if(!(/[0-9]|\n/.test(event.target.value))) {
+    if(!(/[0-9\n]*/.test(event.target.value))) {
       event.preventDefault();
     }
   }
@@ -33,11 +33,13 @@ class StringInput extends Component {
   onClick(event) {
     const vals = this.state.value.split("\n"); // Split the text field by lines
 
-    var strings = new Set();
-    var errors = [];                         // Init error lines.
-    vals.forEach((item, index) => {
-      if(item !== ""){
-        if(!(/^[0-9]{5}$/.test(item))){
+    var errors = [];                          // List of lines with errors.
+    var strings = new Set();                  // We don't need duplicates so we
+                                              // can use a set.
+
+    vals.forEach((item, index) => {           // Check that every line
+      if(item !== ""){                        // is either empty
+        if(!(/^[0-9]{5}$/.test(item))){       // or 5 digits.
           errors.push(index);
         } else {
           strings.add(item);
@@ -45,12 +47,14 @@ class StringInput extends Component {
       }
     });
 
-    if(errors.length !== 0) {
-      alert("Errors on lines: " + errors);
-      event.preventDefault();
+    if(errors.length !== 0) {                 // If we have any errors, notify
+      alert("Errors on lines: " + errors);    // the user of them and don't
+      event.preventDefault();                 // visualise the data.
     }
 
 
+                                              // Sort the set as an array and
+                                              // lift it up.
     this.props.onVisualise(Array.from(strings).sort((left, right) => {
       return parseInt(left) - parseInt(right)
     }));
