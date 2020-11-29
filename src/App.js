@@ -6,9 +6,12 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
-import HeatMap from 'react-heatmap-grid'
-
+import HeatMap from './components/HeatMap.js'
 import StringInput from './components/StringInput.js'
+
+import chroma from 'chroma-js';
+
+const viridisColorscale = ['#fafa6e', '#9cdf7c', '#4abd8c', '#00968e', '#106e7c', '#2a4858'];
 
 function hammingDistance(stringA, stringB) {
   var length = Math.min(stringA.length, stringB.length);
@@ -23,7 +26,7 @@ function hammingDistance(stringA, stringB) {
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {strings: [''], hammingMatrix: [[0]]};
+    this.state = {strings: [], hammingMatrix: [], scale: chroma.scale(viridisColorscale)};
 
     this.handleVisualise = this.handleVisualise.bind(this);
   }
@@ -54,7 +57,6 @@ class App extends Component {
         {value}
       </li>
     );
-
     return (
       <div className="App">
         <Container fluid>
@@ -64,15 +66,10 @@ class App extends Component {
             </Col>
             <Col>
               <HeatMap
-                squares
                 xLabels={this.state.strings}
                 yLabels={this.state.strings}
                 data={this.state.hammingMatrix}
-                cellStyle={(background, value, min, max, data, x, y) => ({
-                  background: `rgba(66, 86, 244, ${1 - (max - value) / (max - min)})`,
-                  fontSize: "11px",
-                })}
-                cellRender={value => value && `${value}`}
+                scale={this.state.scale}
               />
             </Col>
           </Row>

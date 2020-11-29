@@ -15,22 +15,26 @@ class StringInput extends Component {
   }
 
   handleChange(event) {
+    // keypress handles input checking so just set the internal state here.
     this.setState({value: event.target.value});
   }
 
   onKeyPress(event) {
-    const key = event.key;
-    if(!(/[0-9]|Enter/.test(key)))
+    // Check that the key is 0-9 or enter, if it isn't cancel it.
+    if(!(/[0-9]|Enter/.test(event.key)))
       event.preventDefault();
   }
 
   onPaste(event) {
+    // Check that the pasted content only contains 0-9 or '\n'.
     if(!(/[0-9\n]*/.test(event.target.value))) {
       event.preventDefault();
     }
   }
 
   onClick(event) {
+    // check the input and lift the state up.
+
     const vals = this.state.value.split("\n"); // Split the text field by lines
 
     var errors = [];                          // List of lines with errors.
@@ -49,7 +53,7 @@ class StringInput extends Component {
 
     if(errors.length !== 0) {                 // If we have any errors, notify
       alert("Errors on lines: " + errors);    // the user of them and don't
-      event.preventDefault();                 // visualise the data.
+      return;                                 // visualise the data.
     }
 
 
