@@ -19,7 +19,7 @@ function HeatMap(props) {
     
     // Fill row with data.
     row.push(props.data[j].map(val =>
-      <div className="col dataCol dataRow data" style={{"backgroundColor": props.scale((val-min)/(max-min))}}>
+      <div className="col dataCol dataRow data" style={{"backgroundColor": props.scale((max-val)/(max-min))}}>
         <label className="center">{val}</label>
       </div>
     ));
