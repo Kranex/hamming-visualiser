@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/hamming-visualiser/static/css/main.83be7d82.chunk.css",
-    "main.js": "/hamming-visualiser/static/js/main.2113b51c.chunk.js",
-    "main.js.map": "/hamming-visualiser/static/js/main.2113b51c.chunk.js.map",
-    "runtime-main.js": "/hamming-visualiser/static/js/runtime-main.9d057ee4.js",
-    "runtime-main.js.map": "/hamming-visualiser/static/js/runtime-main.9d057ee4.js.map",
-    "static/css/2.1a02f21c.chunk.css": "/hamming-visualiser/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.706e53d5.chunk.js": "/hamming-visualiser/static/js/2.706e53d5.chunk.js",
-    "static/js/2.706e53d5.chunk.js.map": "/hamming-visualiser/static/js/2.706e53d5.chunk.js.map",
-    "static/js/3.c5eee831.chunk.js": "/hamming-visualiser/static/js/3.c5eee831.chunk.js",
-    "static/js/3.c5eee831.chunk.js.map": "/hamming-visualiser/static/js/3.c5eee831.chunk.js.map",
+    "main.css": "/hamming-visualiser/static/css/main.96097366.chunk.css",
+    "main.js": "/hamming-visualiser/static/js/main.48c735f4.chunk.js",
+    "main.js.map": "/hamming-visualiser/static/js/main.48c735f4.chunk.js.map",
+    "runtime-main.js": "/hamming-visualiser/static/js/runtime-main.3ec38169.js",
+    "runtime-main.js.map": "/hamming-visualiser/static/js/runtime-main.3ec38169.js.map",
+    "static/js/2.e4443783.chunk.js": "/hamming-visualiser/static/js/2.e4443783.chunk.js",
+    "static/js/2.e4443783.chunk.js.map": "/hamming-visualiser/static/js/2.e4443783.chunk.js.map",
+    "static/js/3.e2222bdb.chunk.js": "/hamming-visualiser/static/js/3.e2222bdb.chunk.js",
+    "static/js/3.e2222bdb.chunk.js.map": "/hamming-visualiser/static/js/3.e2222bdb.chunk.js.map",
     "index.html": "/hamming-visualiser/index.html",
-    "static/css/2.1a02f21c.chunk.css.map": "/hamming-visualiser/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.83be7d82.chunk.css.map": "/hamming-visualiser/static/css/main.83be7d82.chunk.css.map",
-    "static/js/2.706e53d5.chunk.js.LICENSE.txt": "/hamming-visualiser/static/js/2.706e53d5.chunk.js.LICENSE.txt"
+    "static/css/main.96097366.chunk.css.map": "/hamming-visualiser/static/css/main.96097366.chunk.css.map",
+    "static/js/2.e4443783.chunk.js.LICENSE.txt": "/hamming-visualiser/static/js/2.e4443783.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d057ee4.js",
-    "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.706e53d5.chunk.js",
-    "static/css/main.83be7d82.chunk.css",
-    "static/js/main.2113b51c.chunk.js"
+    "static/js/runtime-main.3ec38169.js",
+    "static/js/2.e4443783.chunk.js",
+    "static/css/main.96097366.chunk.css",
+    "static/js/main.48c735f4.chunk.js"
   ]
 }
