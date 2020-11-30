@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import gitLogo from './github.png'
 
 import HeatMap from './components/HeatMap.js'
 import StringInput from './components/StringInput.js'
@@ -58,23 +55,27 @@ class App extends Component {
       </li>
     );
     return (
-      <div className="App">
-        <Container fluid>
-          <Row>
-            <Col>
+      <div fluid className="container col App">
+          <div className="row header">
+            <h2 className="col title"> Hamming Visualiser </h2>
+            <a className= "col link" href="https://github.com/kranex/hamming-Visualiser">
+              <img className="gitLogo" src={gitLogo} alt="GitHub"/>
+            </a>
+          </div>
+          <div className="row content">
+            <div className="col input">
               <StringInput onVisualise={this.handleVisualise}/>
-            </Col>
-            <Col>
+            </div>
+            <div className="col visualiser">
               <HeatMap
                 xLabels={this.state.strings}
                 yLabels={this.state.strings}
                 data={this.state.hammingMatrix}
                 scale={this.state.scale}
               />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+            </div>
+          </div>
+        </div>
     );
   }
 }

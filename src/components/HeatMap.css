@@ -1,28 +1,28 @@
 .xLabels {
   justify-content: flex-end;
 }
+
 .xLabel {
-  justify-content: flex-end;
-}
-
-.xChar {
-  justify-content: flex-center;
-}
-
-.rotate {
-    transform-origin: 0% 50%;
-    transform: rotate(90deg);
-    white-space: nowrap;
-    display:block;
+  writing-mode: vertical-rl;
+  justify-content:center;
+  margin: 0;
+  color: #EEEEEE;
 }
 
 .yLabel {
-
+  justify-content: center;
+  align-items: center;
+  color: #EEEEEE;
 }
 
 .data {
-  margin: 2px;
+  margin: 1px;
+  position:relative;
 }
 
-.corner {
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

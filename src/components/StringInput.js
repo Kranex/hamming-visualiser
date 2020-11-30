@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import './StringInput.css'
 
 class StringInput extends Component {
   constructor(props){
@@ -66,21 +62,17 @@ class StringInput extends Component {
 
   render() {
     return (
-      <Container>
-        <Col>
-          <Row>
-              <textarea
-                value={this.state.value}
-                onChange={this.handleChange}
-                onPaste={this.onPaste}
-                onKeyPress={this.onKeyPress}
-              />
-          </Row>
-          <Row>
-              <button onClick={this.onClick}>Visualise</button>
-          </Row>
-        </Col>
-      </Container>
+        <div className='col'>
+          <textarea className='row textarea'
+              value={this.state.value}
+              onChange={this.handleChange}
+              onPaste={this.onPaste}
+              onKeyPress={this.onKeyPress}
+            />
+          <div className="row visualise">
+            <button onClick={this.onClick}>Visualise</button>
+          </div>
+        </div>
     )
   }
 }
