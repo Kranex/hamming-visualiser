@@ -1,3 +1,28 @@
+# Description
+
+This project presents a small React App for visualising the hamming distance of
+strings of five digits.
+
+The user may input strings into the text field on the left, only digits and
+newlines are accepted, all other characters will be ignored. Pasting into the
+text field is also subject to the same validation.
+
+Once the user has provided the strings they would like to visualise, they can
+click the visualise button. This will strip all empty lines and any duplicates,
+then it will check that all other lines are exactly five digits long. If this is
+not the case, the visualisation is canceled and the user is informed of the
+offending lines. Otherwise, the hamming distances are calculated and the
+visualisation rendered.
+
+Assumptions made:
+  - The Hamming distances in question are the distances of the strings
+    themselves and not the raw bits. For example, "12321" and "32123" have
+    a hamming distance of `3` as they differ on characters 0, 2 and 4.
+  - A correlation heat map of the Hamming Distances would be the most suitable
+    graphical visualisation. A plot of average distance might have also been
+    suitable, but I think that a correlation heat map shows more interesting
+    information.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
